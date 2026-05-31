@@ -1,0 +1,32 @@
+{
+  "name": "@wbc-ui/press2",
+  "version": "1.0.0-r14",
+  "description": "JSON-driven documentation site builder for the @wbc-ui ecosystem — build content sites with config, not code",
+  "main": "dist/press2.umd.js",
+  "module": "dist/press2.es.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "logo/"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  },
+  "peerDependencies": {
+    "vue": "^2.7.16",
+    "vue-router": "^3.6.5",
+    "vuetify": "^2.7.2",
+    "@wbc-ui/core2": "1.0.0-r14",
+    "lz-string": "^1.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbc-ui/press2.git"
+  },
+  "homepage": "https://github.com/wbc-ui/press2#readme",
+  "bugs": {
+    "url": "https://github.com/wbc-ui/press2/issues"
+  }
+}
