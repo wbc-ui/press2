@@ -15,10 +15,22 @@
 </p>
 
 <p align="center">
-  <a href="https://wb-press.wbc-ui.com">📘 Docs</a> ·
+  <a href="https://wb-press.wbc-ui.com">📘 Docs & Playground</a> ·
   <a href="https://github.com/wbc-ui/press2">🐙 GitHub</a> ·
   <a href="https://wb-press.wbc-ui.com">▶️ Playground</a> ·
   <a href="https://wbc-ui.com">💎 Pro</a>
+</p>
+
+<p align="center">
+  <img src="./assets/hero-docs-engine.webp"
+       alt="@wbc-ui/press2 — JSON-driven documentation site engine"
+       width="780"/>
+</p>
+
+<p align="center">
+  <img src="./assets/mermaid-architecture.png"
+       alt="Architecture diagram"
+       width="680"/>
 </p>
 
 ---
@@ -58,7 +70,7 @@ A **Vue 2.7+ docs-site engine** that renders a navigable site from JSON navigati
 
 ---
 
-## Teasing Examples
+## Usage Examples
 
 ### Level 1 — Component-level usage
 ```vue
@@ -138,6 +150,23 @@ import { PressLayout } from '@wbc-ui/press2';
 | Page bodies don't render | `@wbc-ui/core2` not installed | press2 renders pages as WBC items — `npm install @wbc-ui/core2`. |
 
 For worked examples, see [wb-press.wbc-ui.com](https://wb-press.wbc-ui.com).
+
+---
+
+## ⚡ The Engine Under the Hood
+
+<details>
+<summary>Mermaid diagram (interactive fallback)</summary>
+<p align="center">
+  <img src="./assets/mermaid-under-the-hood.png"
+       alt="Component architecture"
+       width="680"/>
+</p>
+</details>
+
+- **Configuration over Code**: The entire site architecture is derived from a plain JSON object mapping.
+- **WBC Integration**: Every page body is simply a `@wbc-ui/core2` data item (usually pointing to a Markdown file).
+- **Batteries included**: Automatically handles routing, responsive layout collapsing, and document head management.
 
 ---
 
